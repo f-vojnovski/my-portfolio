@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
-import { projects, type Project } from '../data/projects';
+import React from 'react';
+import ProjectCard from '../components/ProjectCard';
+import { projects } from '../data/projects';
 import '../styles/global.css';
 ---
 
@@ -10,9 +11,11 @@ import '../styles/global.css';
     <h1>My Projects</h1>
     
     <div class="projects-grid">
-      {projects.map((project) => (
-        <ProjectCard project={project} client:load />
-      ))}
+      <React.Fragment client:load>
+        {projects.map((project) => (
+          <ProjectCard project={project}/>
+        ))}
+      </React.Fragment>
     </div>
   </main>
 </Layout>
