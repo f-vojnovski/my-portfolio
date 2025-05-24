@@ -1,21 +1,18 @@
 ---
-import ProjectCard from '../components/ProjectCard';
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 import { projects, type Project } from '../data/projects';
+import '../styles/global.css';
 ---
 
-<html lang="en">
-  <head>
-    <title>My Projects</title>
-  </head>
-  <body>
-    <main>
-      <h1>My Projects</h1>
-      
-      <div class="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard project={project} client:load />
-        ))}
-      </div>
-    </main>
-  </body>
-</html>
+<Layout title="My Projects">
+  <main>
+    <h1>My Projects</h1>
+    
+    <div class="projects-grid">
+      {projects.map((project) => (
+        <ProjectCard project={project} client:load />
+      ))}
+    </div>
+  </main>
+</Layout>
