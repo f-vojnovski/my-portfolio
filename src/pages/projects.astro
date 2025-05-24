@@ -1,0 +1,21 @@
+---
+import ProjectCard from '../components/ProjectCard';
+import { projects, type Project } from '../data/projects';
+---
+
+<html lang="en">
+  <head>
+    <title>My Projects</title>
+  </head>
+  <body>
+    <main>
+      <h1>My Projects</h1>
+      
+      <div class="projects-grid">
+        {projects.map((project) => (
+          <ProjectCard project={project} client:load />
+        ))}
+      </div>
+    </main>
+  </body>
+</html>
