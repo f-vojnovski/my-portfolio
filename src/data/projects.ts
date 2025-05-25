@@ -4,6 +4,8 @@ import documentTimestampingImage from "../assets/timestamping.png";
 import rectSlayerImage from "../assets/rectslayer.jpg";
 import ghostGameImage from "../assets/ghostgame.png";
 import blenderShopImage from "../assets/3dshop.png";
+import krimeRPGImage from '../assets/krimerpg.png';
+import askForHelpImage from '../assets/askforhelp.png';
 
 export interface Project {
   id: string;
@@ -54,4 +56,18 @@ export const projects: Project[] = [
       "A web application that allows users to browse, purchase and upload 3D models. It leverages the powers for displaying 3D in the Browser using three.js and React, while the back-end uses Laravel (a pHp framework).",
     imageUrl: blenderShopImage.src,
   },
+    {
+    id: "6",
+    title: "Krime RPG",
+    description:
+      "A Discord bot made in Python with Nextcoord.py and MongoDB. It allows users to play a text-based RPG game in Discord, where they can battle for power as a fearsome criminal.",
+    imageUrl: krimeRPGImage.src,
+  },
+  {
+    id: "7",
+    title: "Ask For Help",
+    description:
+      "An android application which allows the users to quickly find information about a common problem they are facing. Built in Android Studio with Java and Firebase.",
+    imageUrl: askForHelpImage.src,
+  }
 ];
