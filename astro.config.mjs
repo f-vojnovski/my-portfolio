@@ -6,5 +6,6 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), mdx()]
+  integrations: [react(), mdx()],
+  site: 'https://f-vojnovski.github.io',
 });
