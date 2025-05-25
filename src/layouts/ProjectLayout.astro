@@ -1,0 +1,35 @@
+---
+import Layout from "./Layout.astro";
+
+const { title, shortDescription, imageUrl, techStack, githubUrl } = Astro.props;
+---
+
+<Layout title={title}>
+  <article class="project">
+    <header>
+      <h1>{title}</h1>
+      <p class="description">{shortDescription}</p>
+      {imageUrl && <img src={imageUrl} alt={title} />}
+    </header>
+    
+    <slot />
+    
+    <footer>
+      <!-- {techStack && techStack.length > 0 && (
+        <div class="tech-stack">
+          <h3>Technologies</h3>
+          <ul>
+            {techStack.map((tech) => (
+              <li>{tech}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {githubUrl && (
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          View on GitHub
+        </a>
+      )} -->
+    </footer>
+  </article>
+</Layout>
