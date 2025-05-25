@@ -2,25 +2,14 @@
 title: Krime RPG
 ---
 
-## About the Project
+KrimeRPG is a Python-based Discord bot that powers a crime-themed text-based economy game. Players compete to earn virtual money through various actions and strategic decisions in this multiplayer RPG environment.
 
-A Discord text-based RPG bot where players battle as criminals, built with Python, Nextcord.py, and MongoDB.
+The bot was originally developed for Replit.com, using Flask and UptimeRobot to maintain 24/7 uptime despite Replit's idle timeout limitations. The images that are used are from popular media and are found on imgur. It features:
 
-## Features
+- Persistent player progression using MongoDB for data storage
+- Game coordination handled through nextcord.py (a modern Discord.py fork)
+- Crime-themed RPG elements with progression systems
 
-- Character progression system
-- PvP and PvE combat
-- Crime simulation mechanics
-- Guild system with territories
-- Economy with illegal goods trading
+I ran this bot on a server and to be honest it was very fun to play, we had about 20 active players at the peak, but it really helped the server activity. 
 
-## Challenges and Solutions
-
-- **Challenge:** Persistent game state
-  - **Solution:** MongoDB database with efficient data modeling
-  
-- **Challenge:** Command parsing
-  - **Solution:** Implemented natural language processing for inputs
-  
-- **Challenge:** Balancing economy
-  - **Solution:** Created simulation to test economic models
+The source code for the project can be found [here](https://github.com/f-vojnovski/KrimeRPG).

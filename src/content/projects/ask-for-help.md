@@ -2,25 +2,10 @@
 title: Ask For Help
 ---
 
-## About the Project
+This Android application was developed as a university project demonstrating modern mobile development features with Android Studio and Java. 
+The app's purpose is for the users to quickly find solutions for common household problems through uploading a picture and getting a community response.
 
-An Android app that helps users quickly find solutions to common problems, built with Java in Android Studio using Firebase backend.
+The project demonstrates how to use Firebase authentication for login and registration, post creation with images (using Firebase storage) and post discovery
+with an Algolia integration for easy post discovery. It also demonstrates location based features and me and my friends tested it on our Android devices.
 
-## Features
-
-- Categorized problem database
-- Step-by-step solution guides
-- User-contributed solutions
-- Emergency contact integration
-- Location-based service recommendations
-
-## Challenges and Solutions
-
-- **Challenge:** Offline functionality
-  - **Solution:** Implemented local caching with sync on reconnect
-  
-- **Challenge:** Content moderation
-  - **Solution:** Created reporting system with admin dashboard
-  
-- **Challenge:** UI accessibility
-  - **Solution:** Followed Material Design guidelines with high contrast options
+The source code can be found [here](https://github.com/f-vojnovski/AskForHelp).

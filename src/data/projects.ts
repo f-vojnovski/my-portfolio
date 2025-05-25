@@ -48,13 +48,6 @@ export const projects: Project[] = [
     url: "rect-slayer",
   },
   {
-    id: "5",
-    title: "Ghost Game",
-    description: `A game made in the Unity Engine. A 2D "cat and mouse" game where two players collect powerups and see who can be the last to play as the ghost when the timer runs out. Global Game Jam 2024 entry.`,
-    imageUrl: ghostGameImage.src,
-    url: "ghost-game",
-  },
-  {
     id: "6",
     title: "3D Shop",
     description:
@@ -77,5 +70,12 @@ export const projects: Project[] = [
       "An android application which allows the users to quickly find information about a common problem they are facing. Built in Android Studio with Java and Firebase.",
     imageUrl: askForHelpImage.src,
     url: "ask-for-help",
+  },
+    {
+    id: "5",
+    title: "Ghost Game",
+    description: `A game made in the Unity Engine. A 2D "cat and mouse" game where two players collect powerups and see who can be the last to play as the ghost when the timer runs out. Global Game Jam 2024 entry.`,
+    imageUrl: ghostGameImage.src,
+    url: "https://github.com/limepixl/GhostGame/",
   },
 ];

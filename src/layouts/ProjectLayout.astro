@@ -5,13 +5,15 @@ const { title, shortDescription, imageUrl, techStack, githubUrl } = Astro.props;
 ---
 
 <Layout title={title}>
-  <article class="project">
+  <article class="project-container">
     <header>
+      <a href="/projects" class="back-button">← Back to Projects</a>
       <h1>{title}</h1>
       <p class="description">{shortDescription}</p>
-      {imageUrl && <img src={imageUrl} alt={title} />}
     </header>
     
-    <slot />
+    <div class="markdown-container">
+      <slot />
+    </div>
   </article>
 </Layout>

@@ -7,8 +7,18 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
+  const isExternalLink = project.url?.startsWith('http://') || project.url?.startsWith('https://');
+  
+  const anchorProps = isExternalLink ? {
+    href: project.url,
+    target: "_blank",
+    rel: "noopener noreferrer"
+  } : {
+    href: `/projects/${project.url}`
+  };
+
   return (
-    <a className="project-card" href={`/projects/${project.url}`} >
+    <a className="project-card" {...anchorProps}>
       <img 
         src={project.imageUrl} 
         alt={project.title} 

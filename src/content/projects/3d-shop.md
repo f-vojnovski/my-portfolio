@@ -2,25 +2,8 @@
 title: 3D Model Shop
 ---
 
-## About the Project
+This is a web application I developed as a university project where users can trade 3D models as digital products. The platform allows users to upload their own models, purchase others' creations, and preview 3D models directly in their browser.
 
-A web application for browsing, purchasing, and uploading 3D models with interactive previews using three.js, React frontend, and Laravel backend.
+The backend is built with Laravel using Eloquent ORM, with a SQLite database for product storage. For the frontend, I used React with Redux for state management and React Three Fiber (Three.js) for 3D model rendering. The system handles file storage for model assets and supports user authentication.
 
-## Features
-
-- Interactive 3D model viewer with orbit controls
-- User accounts with purchase history
-- Shopping cart and checkout system
-- Model upload with automatic thumbnail generation
-- Rating and review system
-
-## Challenges and Solutions
-
-- **Challenge:** 3D rendering performance
-  - **Solution:** Implemented model LOD (Level of Detail) system
-  
-- **Challenge:** Secure file uploads
-  - **Solution:** Created validation pipeline with virus scanning
-  
-- **Challenge:** Complex state management
-  - **Solution:** Used Redux for application state
+Complete documentation as well as the source code can be found on [github](https://github.com/f-vojnovski/3d-shop).
