@@ -3,72 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Filip's Sphere</title>
 	</head>
 	<body>
 		<nav class="navbar">
 			<div class="nav-container">
-				<a href="/" class="nav-logo">My Portfolio</a>
+				<a href="/" class="nav-logo">Hello</a>
 				<div class="nav-links">
 					<a href="/" class="nav-link">Home</a>
 					<a href="/projects" class="nav-link">Projects</a>
 				</div>
 			</div>
 		</nav>
+		<main class="home-container">
 		<slot />
+		</main>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	.navbar {
-		background-color: #333;
-		color: white;
-		padding: 1rem 0;
-		width: 100%;
-	}
-
-	.nav-container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
-
-	.nav-logo {
-		font-weight: bold;
-		font-size: 1.5rem;
-		color: white;
-		text-decoration: none;
-	}
-
-	.nav-links {
-		display: flex;
-		gap: 1.5rem;
-	}
-
-	.nav-link {
-		color: white;
-		text-decoration: none;
-		transition: opacity 0.2s;
-	}
-
-	.nav-link:hover {
-		opacity: 0.8;
-	}
-
-	/* Add some spacing below the navbar */
-	main {
-		padding-top: 2rem;
-	}
-</style>

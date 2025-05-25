@@ -8,11 +8,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className="project-card">
-       <a 
-          href={`/projects/${project.url}`} 
-          className="project-card-link"
-    >View</a>
+    <a className="project-card" href={`/projects/${project.url}`} >
       <img 
         src={project.imageUrl} 
         alt={project.title} 
@@ -22,7 +18,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <h3>{project.title}</h3>
         <p>{project.description}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
