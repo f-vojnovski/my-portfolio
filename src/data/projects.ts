@@ -74,8 +74,8 @@ export const projects: Project[] = [
     {
     id: "5",
     title: "Ghost Game",
-    description: `A game made in the Unity Engine. A 2D "cat and mouse" game where two players collect powerups and see who can be the last to play as the ghost when the timer runs out. Global Game Jam 2024 entry.`,
+    description: `A game made in the Unity Engine. A 2D "cat and mouse" game where two players collect powerups and see who can be the last to play as the ghost when the timer runs out. Global Game Jam 2024 entry. Note: Link currently only provides the Facebook videos of the presentations.`,
     imageUrl: ghostGameImage.src,
-    url: "https://github.com/limepixl/GhostGame/",
+    url: "https://www.facebook.com/mgi.mk/videos/1410161073184779",
   },
 ];
