@@ -1,23 +1,48 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Filip's Sphere</title>
-	</head>
-	<body>
-		<nav class="navbar">
-			<div class="nav-container">
-				<a href="/" class="nav-logo">Hello</a>
-				<div class="nav-links">
-					<a href="/" class="nav-link">Home</a>
-					<a href="/projects" class="nav-link">Projects</a>
-				</div>
-			</div>
-		</nav>
-		<main class="home-container">
-		<slot />
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Filip</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">Filip Vojnovski</a>
+        <div class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/projects" class="nav-link">Projects</a>
+        </div>
+      </div>
+    </nav>
+    <main class="home-container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="social-links">
+          <a
+            href="https://github.com/f-vojnovski"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            GitHub
+          </a>
+          <span class="social-separator">|</span>
+          <a
+            href="https://www.linkedin.com/in/filip-vojnovski/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div class="copyright">Blog built in Astro + React.</div>
+      </div>
+    </footer>
+  </body>
 </html>
